@@ -15,7 +15,16 @@ import '@material/web/button/text-button.js';
 import '@material/web/icon/icon.js';
 
 import { defineProps } from 'vue';
-import { ButtonType } from '.';
+
+enum ButtonType {
+    Elevated = 'elevated',
+    Filled = 'filled',
+    FilledTonal = 'filled-tonal',
+    Outlined = 'outlined',
+    Text = 'text',
+    Icon = 'icon'
+}
+
 
 const props = defineProps({
   type: {
@@ -24,7 +33,7 @@ const props = defineProps({
       return ['elevated', 'filled', 'filled-tonal', 'outlined', 'text', 'icon'].includes(value);
     },
     required: true,
-    default:  ButtonType.Filled
+    default:  'filled',
   },
   hasIcon: {
     type: Boolean,

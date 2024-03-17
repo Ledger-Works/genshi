@@ -1,6 +1,6 @@
+@import '../ui/css/light.css';
+@import '../ui/css/dark.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* @import './css/light.css';
-@import './css/dark.css'; */

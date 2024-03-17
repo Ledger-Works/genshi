@@ -17,12 +17,12 @@ import '@material/web/icon/icon.js';
 import { defineProps } from 'vue';
 
 enum ButtonType {
-    Elevated = 'elevated',
-    Filled = 'filled',
-    FilledTonal = 'filled-tonal',
-    Outlined = 'outlined',
-    Text = 'text',
-    Icon = 'icon'
+  Elevated = 'elevated',
+  Filled = 'filled',
+  FilledTonal = 'filled-tonal',
+  Outlined = 'outlined',
+  Text = 'text',
+  Icon = 'icon'
 }
 
 

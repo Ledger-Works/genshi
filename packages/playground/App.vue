@@ -1,11 +1,13 @@
 <template>
     <div class="light inter-100">
-        <Button type="filled">Click me</Button>
+        <Card>
+            Test
+        </Card>
     </div>
 </template>
 
 <script setup lang="ts">
-import Button from 'material/button';
+import Card from 'material/Card';
 </script>
 
 <style>

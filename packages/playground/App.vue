@@ -1,6 +1,6 @@
 <template>
     <div class="light inter-100">
-        <Card>
+        <Card type="elevated">
             Test
         </Card>
     </div>

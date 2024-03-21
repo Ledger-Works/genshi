@@ -1,13 +1,16 @@
 <template>
   <div class="light inter-100">
-    <Card type="outlined">
+    <TextField
+      type="outlined"
+      label="text"
+    >
       Test
-    </Card>
+    </TextField>
   </div>
 </template>
 
 <script setup lang="ts">
-import Card from 'material/Card';
+import TextField from 'material/TextField';
 </script>
 
 <style>

@@ -7,6 +7,7 @@
     :prefix-text="prefixText"
     :suffix-text="suffixText"
     :supporting-text="supportingText"
+    @change="updateValue"
   >
     <slot />
   </component>
@@ -18,6 +19,7 @@ import '@material/web/button/text-button.js';
 import '@material/web/icon/icon.js';
 import '@material/web/iconbutton/icon-button.js';
 import '@material/web/textfield/filled-text-field.js';
+import { MdFilledTextField } from '@material/web/textfield/filled-text-field.js';
 import '@material/web/textfield/outlined-text-field.js';
 
 type Props = {
@@ -37,4 +39,10 @@ withDefaults(defineProps<Props>(), {
   supportingText:''
 })
 
+const model = defineModel({type: String});
+
+const updateValue = ($event: Event): void => {
+  const textField = $event.target as MdFilledTextField
+  model.value = textField.value;
+}
 </script>

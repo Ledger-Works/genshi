@@ -1,16 +1,19 @@
 <template>
   <div class="light inter-100">
     <TextField
+      v-model="model"
       type="outlined"
       label="text"
-    >
-      Test
-    </TextField>
+    />
+    {{ model }}
   </div>
 </template>
 
 <script setup lang="ts">
 import TextField from 'material/TextField';
+import { ref } from 'vue';
+
+const model = ref('')
 </script>
 
 <style>

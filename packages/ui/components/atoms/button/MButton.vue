@@ -1,7 +1,7 @@
 <template>
   <div>
     <component :is="`md-${props.type}-button`">
-      <slot></slot>
+      <slot />
     </component>
   </div>
 </template>

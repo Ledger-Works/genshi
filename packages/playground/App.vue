@@ -1,9 +1,9 @@
 <template>
-    <div class="light inter-100">
-        <Card>
-            Test
-        </Card>
-    </div>
+  <div class="light inter-100">
+    <Card type="outlined">
+      Test
+    </Card>
+  </div>
 </template>
 
 <script setup lang="ts">

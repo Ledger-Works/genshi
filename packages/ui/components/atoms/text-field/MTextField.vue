@@ -7,6 +7,7 @@
     :prefix-text="prefixText"
     :suffix-text="suffixText"
     :supporting-text="supportingText"
+    :type="inputType"
     @change="updateValue"
   >
     <slot />
@@ -30,13 +31,15 @@ type Props = {
     prefixText?: string
     suffixText?: string
     supportingText?: string
+    inputType?: 'text' | 'password' | 'email' | 'number' | 'search' | 'tel' | 'url' | 'textarea'
 }
 
 withDefaults(defineProps<Props>(), {
   type: 'outlined',
   prefixText: '',
   suffixText: '',
-  supportingText:''
+  supportingText:'',
+  inputType: 'text'
 })
 
 const model = defineModel({type: String});

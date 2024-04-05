@@ -1,5 +1,8 @@
 <template>
-  <div class="card" :class="props.type">
+  <div
+    class="card"
+    :class="props.type"
+  >
     <slot />
     <md-ripple />
   </div>

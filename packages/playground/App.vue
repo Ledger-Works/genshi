@@ -1,19 +1,13 @@
 <template>
   <div class="light inter-100">
-    <TextField
-      v-model="model"
-      type="outlined"
-      label="text"
-    />
-    {{ model }}
+    <BottomSheet>
+      Who let the dogs out
+    </BottomSheet>
   </div>
 </template>
 
 <script setup lang="ts">
-import TextField from 'material/TextField';
-import { ref } from 'vue';
-
-const model = ref('')
+import BottomSheet from 'material/BottomSheet';
 </script>
 
 <style>

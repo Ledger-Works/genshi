@@ -1,2 +1,2 @@
 /// <reference types="vite/client" />
-declare module "material/*"
+declare module "material/"

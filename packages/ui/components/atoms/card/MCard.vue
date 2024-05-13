@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import "@material/web/ripple/ripple.js";
-import { CardType } from "./cardConstant";
+import { CardType } from "./constants";
 
 const props = withDefaults(defineProps<{ type: CardType }>(), {
   type: "elevated",

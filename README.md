@@ -76,6 +76,22 @@ export default {
 </script>
 ```
 
+## Usage
+
+### Topbar
+```vue
+  <Header
+    type="large"
+    leading-icon="arrow_back"
+    :traling-icons="['attach_file', 'person', 'more_vert']"
+    class="my-header"
+  >
+    <template #headline>
+      Hello World
+    </template>
+  </Header>
+```
+
 Refer to the individual component documentation for specific usage instructions and examples.
 
 ## Contributing

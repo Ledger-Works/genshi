@@ -1,2 +1,7 @@
 @import '../ui/css/light.css';
 @import '../ui/css/dark.css';
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}

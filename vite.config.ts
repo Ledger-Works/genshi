@@ -20,7 +20,8 @@ export default defineConfig({
         "./Button": "./packages/ui/components/atoms/button",
         './Card': "./packages/ui/components/atoms/card",
         './TextField': './packages/ui/components/atoms/text-field',
-        './BottomSheet': './packages/ui/components/atoms/bottom-sheet'
+        './BottomSheet': './packages/ui/components/atoms/bottom-sheet',
+        './TopBar': './packages/ui/components/atoms/top-bar',
       },
       shared: ['vue'],
     }),
